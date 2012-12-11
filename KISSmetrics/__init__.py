@@ -92,7 +92,7 @@ class KM(object):
         try:
             data = self._encode_dict_to_utf8(data)
             connection = httplib.HTTPConnection(self._host, timeout=self._http_timeout)
-            connection.request('GET', u'/%s?%s' % (type, urllib.urlencode(data)))
+            connection.request('GET', '/%s?%s' % (type, urllib.urlencode(data)))
             r = connection.getresponse()
             result = r.status == httplib.OK
         except:
