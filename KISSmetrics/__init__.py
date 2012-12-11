@@ -33,15 +33,15 @@ class KM(object):
             self.set(action)
 
         props.update({'_n': action})
-        self.request('e', props)
+        return self.request('e', props)
 
     def set(self, data):
         self.check_id_key()
-        self.request('s',data)
+        return self.request('s',data)
 
     def alias(self, name, alias_to):
         self.check_init()
-        self.request('a', {'_n': alias_to, '_p': name}, False)
+        return self.request('a', {'_n': alias_to, '_p': name}, False)
 
     def reset(self):
         self._id = None
