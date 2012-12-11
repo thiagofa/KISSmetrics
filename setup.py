@@ -3,7 +3,7 @@
 sdict = dict(
     name = 'KISSmetrics',
     packages = ['KISSmetrics'],
-    version = '0.1.0',
+    version = '0.1.1',
     description = 'Python client for KISSmetrics',
     long_description = 'Python client for KISSmetrics',
     url = 'http://github.com/kissmetrics/KISSmetrics',
